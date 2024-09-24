@@ -1,0 +1,85 @@
+body{
+    padding-bottom: 100px;
+}
+body::before{
+    content: 'Xs';
+    color: brown;
+    font-size: 20px;
+    position: fixed;
+    font-weight: bold;
+    top: 0;
+    left: 10;
+}
+[class^="container"]{
+     text-align: center;
+     /* align-content: center; */
+    /* min-height: 100px; */
+    
+    
+    background-color:rgb(191, 213, 233);
+    border: 1px solid white;
+
+
+}
+[class^="row"]{
+   
+    min-height:100px;
+    
+    background-color: rgb(75, 224, 187);
+
+    
+}
+h1,h2{
+    align-items: center;
+    text-align: center;
+    color: blue;
+}
+
+[class^="col"]{
+   
+
+    border: 1px solid cadetblue;
+    background-color:violet;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body::before{
+        content: 'SM';
+    }
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    body::before{
+        content: 'MD';
+    }
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body::before{
+        content: 'Lg';
+    }
+
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body::before{
+        content: 'XL';
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    body::before{
+        content: 'XXL';
+    }
+
+ }
